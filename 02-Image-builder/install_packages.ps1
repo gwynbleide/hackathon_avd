@@ -20,21 +20,21 @@ $applications = @{
         InstallerPath = Join-Path -Path $installRoot -ChildPath "google_chrome.msi"
         InstallArgs   = @('/i', 'c:\ImageBuilder\google_chrome.msi', '/quiet')
         TestPath      = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-        DownloadUrl   = "https://storageaccountname.blob.core.windows.net/packages/google_chrome.msi"
+        DownloadUrl   = "https://zenavdt1swavd01.blob.core.windows.net/packages/google_chrome.msi"
     }
     "notepad++"     = @{
         InstallerPath = Join-Path -Path $installRoot -ChildPath "notepad++.exe"
         InstallArgs   = @('/S')
         InstallerType = "EXE"
         TestPath      = "C:\Program Files\Notepad++\notepad++.exe"
-        DownloadUrl   = "https://storageaccountname.blob.core.windows.net/packages/notepad++.exe"
+        DownloadUrl   = "https://zenavdt1swavd01.blob.core.windows.net/packages/notepad++.exe"
     }
     "RSAT"          = @{
         InstallerPath = Join-Path -Path $installRoot -ChildPath "rsat.msu"
         InstallArgs   = @('/quiet', '/norestart')
         InstallerType = "MSU"
         TestPath      = "C:\Windows\System32\dsa.msc"
-        DownloadUrl   = "https://storageaccountname.blob.core.windows.net/packages/rsat.msu"
+        DownloadUrl   = "https://zenavdt1swavd01.blob.core.windows.net/packages/rsat.msu"
     }
     # Add more applications as needed in the same format
 }
